@@ -1,15 +1,27 @@
-:root{
-    --font-headings: 'Ubuntu';
-    --font-text-default: 'sans-serif';
-
-    --color-heading: #13141f;
-}
 
 *{
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
 }
+
+:root{
+    --container-search: 28rem;
+    --input-search: 24rem;
+
+    --font-headings: 'Ubuntu';
+    --font-family-default: 'sans-serif';
+    --font-size-default: 1rem;
+
+    --color-heading: #13141f;
+    --color-focus: #1180ff;
+    --gray-1: #eee;
+    --white-1: #fff;
+
+    --small-padding: 0.5rem; 
+}
+
+/* Header */
 
 #header{
     background-color: var(--color-heading);
@@ -29,5 +41,57 @@
 
 .header-logo-text{
     font-family: var(--font-headings);
-
 }
+
+/* End Header */
+
+/* Begin body */
+
+body{
+    background: var(--gray-1);
+}
+
+/* End Body */
+
+/* Begin input search */
+
+.container{
+    max-width: var(--container-search);
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-search{
+    margin: 1rem;
+    padding: var(--small-padding);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 1.5rem;
+}
+
+#input-search, .icon-search{
+    font-size: var(--font-size-default);
+}
+
+#input-search{
+    width: var(--container-search);
+}
+
+.button-search{
+    display: flex;
+    align-items: center;
+}
+
+#input-search, .button-search{
+    outline: none;
+    background: none;
+    border: none;
+}
+
+#container-search:focus-within{
+    outline: var(--color-focus);
+    background: var(--white-1);
+}
+
+/* End input search */
