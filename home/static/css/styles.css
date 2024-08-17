@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 1.6rem;
 }
 
 :root{
@@ -89,9 +88,14 @@ body{
     border: none;
 }
 
-#container-search:focus-within{
-    outline: var(--color-focus);
-    background: var(--white-1);
+.container-search:focus-within{
+    outline: var(--color-focus) solid 1px;
+    background-color: var(--white-1);
+    border: var(--color-focus);
+}
+
+.button-search:focus-within{
+    color: var(--color-focus);
 }
 
 /* End input search */
