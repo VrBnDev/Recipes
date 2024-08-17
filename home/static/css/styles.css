@@ -1,3 +1,10 @@
+:root{
+    --font-headings: 'Ubuntu';
+    --font-text-default: 'sans-serif';
+
+    --color-heading: #13141f;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +12,7 @@
 }
 
 #header{
-    background-color: #333;
+    background-color: var(--color-heading);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,4 +21,13 @@
 .header-logo{
     padding: 1rem;
     color: #fff;
+}
+
+.header-logo-icon{
+    margin-right: 0.2rem;
+}
+
+.header-logo-text{
+    font-family: var(--font-headings);
+
 }
