@@ -6,7 +6,7 @@
 }
 
 :root{
-    --container: 70rem;
+    --container: 130rem;
     --container-search: 64rem;
     --input-search: 24rem;
 
@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6{
 
 body{
     background: var(--gray-1);
+    font-family: var(--font-headings);
 }
 
 /* End Body */
@@ -131,7 +132,8 @@ body{
 .main-content-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: .5rem;
+    gap: 1.5rem;
+    padding: 1.5rem;
 } 
 
 .recipe{
@@ -177,4 +179,10 @@ body{
 
 .recipe-author a:hover{
     color: var(--color-heading);
+}
+
+.recipe-footer{
+    background-color: var(--color-heading);
+    padding: 2rem;
+    
 }
