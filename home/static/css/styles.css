@@ -14,8 +14,9 @@
     --font-family-default: 'sans-serif';
 
     --color-heading: #13141f;
-    --color-dark-text: #6f6f6f;
-    --color-gray-1: #afafaf;
+    --color-dark-text: #353535;
+    --color-gray-1: #6d6d6d;
+    --color-gray-2: #d1d1d1;
     --color-primary: #00aaff;
     --color-focus: #1180ff;
     --gray-1: #bbb;
@@ -137,7 +138,6 @@ body{
 } 
 
 .recipe{
-    background: red;
     box-shadow: -5px 5px 10px rgba(0,0,0, .2);
     transition: all 300ms ease-in-out;
 }
@@ -181,8 +181,28 @@ body{
     color: var(--color-heading);
 }
 
+.preparation-method{
+    display: flex;
+    justify-content: space-around;
+    background-color: #d1d1d1;
+}
+
+.preparation-method-item{
+    padding: 2rem;
+}
+
+.preparation-method-text{
+    text-align: center;
+    margin-top: .5rem;
+}
+
 .recipe-footer{
     background-color: var(--color-heading);
     padding: 2rem;
-    
+    text-align: center;
+}
+
+.recipe-footer > span {
+    color: var(--color-gray-2);
+    margin-left: .5rem;
 }
