@@ -206,3 +206,8 @@ body{
     color: var(--color-gray-2);
     margin-left: .5rem;
 }
+
+.recipe-more-view{
+    text-decoration: none;
+    color: var(--white-1);
+}
