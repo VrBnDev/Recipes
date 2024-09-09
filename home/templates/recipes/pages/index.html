@@ -1,0 +1,23 @@
+{% include "recipes/partials/head.html" %}
+{% include "recipes/partials/header.html" %}
+{% include "recipes/partials/search.html" %}
+
+
+<body>
+    {{header}}
+    {{search}}
+    
+    <section class="main-content-container">
+        <article class="main-content main-content-list container">
+            {% include "recipes/partials/recipe.html" %}
+            {% include "recipes/partials/recipe.html" %}
+            {% include "recipes/partials/recipe.html" %}
+            {% include "recipes/partials/recipe.html" %}
+            {% include "recipes/partials/recipe.html" %}
+            {% include "recipes/partials/recipe.html" %}
+        </article>
+        
+    </section>
+    
+</body>
+</html>
